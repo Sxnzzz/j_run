@@ -1,6 +1,8 @@
 use macroquad::prelude::*;
 
+mod consts;
 mod localentity;
+mod groundentity;
 
 use localentity::LocalPlayer;
 
