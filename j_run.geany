@@ -29,10 +29,10 @@ long_line_column=72
 
 [files]
 current_page=2
-FILE_NAME_0=207;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fconsts.rs;0;4
+FILE_NAME_0=156;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fconsts.rs;0;4
 FILE_NAME_1=570;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fgroundentity.rs;0;4
-FILE_NAME_2=305;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Flocalentity.rs;0;4
-FILE_NAME_3=75;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fmain.rs;0;4
+FILE_NAME_2=2168;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Flocalentity.rs;0;4
+FILE_NAME_3=654;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fmain.rs;0;4
 
 [VTE]
 last_dir=/home/senz/Documents/Coding/Repos/j_run/src

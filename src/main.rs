@@ -28,7 +28,7 @@ async fn main(){
 		clear_background(BLUE);
 		
 		// player movements first
-		local_player.update();
+		local_player.update(&maintilemap);
 		
 		// calc view
 		camera.target = local_player.pos + local_player.size / 2.0;
