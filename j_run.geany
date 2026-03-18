@@ -1,0 +1,56 @@
+[editor]
+line_wrapping=false
+line_break_column=72
+auto_continue_multiline=true
+
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=false
+strip_trailing_spaces=false
+replace_tabs=false
+
+[indentation]
+indent_width=4
+indent_type=1
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=j_run
+base_path=/home/senz/Documents/Coding/Repos/j_run
+description=
+file_patterns=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=3
+FILE_NAME_0=95;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fconsts.rs;0;4
+FILE_NAME_1=45;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fgroundentity.rs;0;4
+FILE_NAME_2=328;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Flocalentity.rs;0;4
+FILE_NAME_3=563;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fmain.rs;0;4
+
+[VTE]
+last_dir=/home/senz/Documents/Coding/Repos/j_run/src
+
+[build-menu]
+NF_00_LB=Cargo Build
+NF_00_CM=cargo build
+NF_00_WD=/home/senz/Documents/Coding/Repos/j_run
+NF_01_LB=Cargo Test
+NF_01_CM=cargo test
+NF_01_WD=/home/senz/Documents/Coding/Repos/j_run
+NF_02_LB=Cargo Bench
+NF_02_CM=cargo bench
+NF_02_WD=/home/senz/Documents/Coding/Repos/j_run
+EX_01_LB=Cargo Run
+EX_01_CM=cargo run
+EX_01_WD=/home/senz/Documents/Coding/Repos/j_run
+RustFT_00_LB=Compile
+RustFT_00_CM=rustc "%f"
+RustFT_00_WD=/home/senz/Documents/Coding/Repos/j_run
+filetypes=Rust;
