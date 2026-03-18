@@ -1,5 +1,7 @@
 use macroquad::prelude::*;
 use crate::consts;
+use crate::groundentity;
+
 
 pub struct LocalPlayer{
   pub pos: Vec2,
@@ -16,6 +18,15 @@ impl LocalPlayer{
       size: new_size,
       color: new_color
     }
+  }
+  
+  pub fn is_map_solid_at(tilemap: &groundentity::GroundEntity, worldpos: Vec2) -> bool {
+	  let pos = worldpos - tilemap.pos;
+	  
+	  let tilex = (pos.x / tilemap.tile_size.x) as i32;
+	  let tiley = (pos.y / tilemap.tile_size.y) as i32;
+	  
+	  tilemap.is_solid(tilex, tiley)
   }
 
   pub fn draw(&self)

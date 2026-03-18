@@ -12,15 +12,28 @@ pub struct GroundEntity{
 
 impl GroundEntity {
 	
-  pub fn get(&self, x: usize, y: usize) -> u8 {
-	  self.data[x + y * self.width]
-  }
+	pub fn get(&self, x: usize, y: usize) -> u8 {
+		self.data[x + y * self.width]
+	}
   
-  pub fn is_solid(&self, x: i32, y: i32) -> bool {
-    self.get(x as usize, y as usize) == consts::TILESOLID
+
+	pub fn is_solid(&self, x: i32, y: i32) -> bool {
+	  if x < 0 || y < 0 {
+		  return false;
+	  }
+	  
+	  let x = x as usize;
+	  let y = y as usize;
+	  
+	  if x >= self.width || y >= self.height {
+		  return false;
+	  }
+	  
+	  self.get(x, y) == consts::TILESOLID
   }
     
-  pub fn new_tilemap(width: usize, height: usize, pos: Vec2, tile_size: Vec2, data: Vec<u8>, ground_color: Color) -> Self {
+    
+	pub fn new_tilemap(width: usize, height: usize, pos: Vec2, tile_size: Vec2, data: Vec<u8>, ground_color: Color) -> Self {
       debug_assert!(data.len() == width * height, "Tile data invalid");
 
       Self {
