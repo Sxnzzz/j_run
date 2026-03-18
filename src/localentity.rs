@@ -12,7 +12,8 @@ pub struct LocalPlayer
 
 impl LocalPlayer
 {
-	pub fn new(new_pos: Vec2, new_vel: Vec2, new_size: Vec2, new_color: Color) -> Self{
+	pub fn new(new_pos: Vec2, new_vel: Vec2, new_size: Vec2, new_color: Color) -> Self
+	{
 		Self
 		{
 			pos: new_pos,
@@ -22,7 +23,8 @@ impl LocalPlayer
 		}
 	}
   
-	pub fn is_map_solid_at(tilemap: &groundentity::GroundEntity, worldpos: Vec2) -> bool {
+	pub fn is_map_solid_at(tilemap: &groundentity::GroundEntity, worldpos: Vec2) -> bool 
+	{
 		let pos = worldpos - tilemap.pos;
 		let tilex = (pos.x / tilemap.tile_size.x) as i32;
 		let tiley = (pos.y / tilemap.tile_size.y) as i32;
@@ -49,11 +51,11 @@ impl LocalPlayer
 				return true;
 			}
 		}
-		
 		false
 	}
 	
-	fn is_colliding_map_y(&self, tilemap: &groundentity::GroundEntity) -> bool {
+	fn is_colliding_map_y(&self, tilemap: &groundentity::GroundEntity) -> bool
+	{
 		let padding = 2.0;
 
 		let points = [
@@ -63,8 +65,10 @@ impl LocalPlayer
 			self.pos + vec2(self.size.x - padding, self.size.y),
 		];
 
-		for p in points {
-			if Self::is_map_solid_at(tilemap, p) {
+		for p in points 
+		{
+			if Self::is_map_solid_at(tilemap, p) 
+			{
 				return true;
 			}
 		}
@@ -72,7 +76,8 @@ impl LocalPlayer
 		false
 	}
   
-	pub fn is_on_ground(&self, tilemap: &groundentity::GroundEntity) -> bool {
+	pub fn is_on_ground(&self, tilemap: &groundentity::GroundEntity) -> bool 
+	{
 		let epsilon = 1.0;
 
 		let left_foot = self.pos + vec2(2.0, self.size.y + epsilon);
@@ -82,7 +87,8 @@ impl LocalPlayer
 		Self::is_map_solid_at(tilemap, right_foot)
 	}
 	
-	pub fn handlemovement(&self) -> f32 {
+	pub fn handlemovement(&self) -> f32 
+	{
 		let mut dir = 0.0;
 
 		if is_key_down(KeyCode::A) { dir -= 1.0; }
@@ -133,7 +139,5 @@ impl LocalPlayer
 		if on_ground && is_key_pressed(KeyCode::Space) {
 			self.vel.y = -consts::LOCALJUMPFORCE;
 		}
-		
-		
 	}
 }
