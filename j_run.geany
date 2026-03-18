@@ -28,10 +28,10 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=3
-FILE_NAME_0=467;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fconsts.rs;0;4
-FILE_NAME_1=739;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fgroundentity.rs;0;4
-FILE_NAME_2=783;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Flocalentity.rs;0;4
+current_page=2
+FILE_NAME_0=31;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fconsts.rs;0;4
+FILE_NAME_1=112;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fgroundentity.rs;0;4
+FILE_NAME_2=760;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Flocalentity.rs;0;4
 FILE_NAME_3=75;Rust;0;EUTF-8;1;1;0;%2Fhome%2Fsenz%2FDocuments%2FCoding%2FRepos%2Fj_run%2Fsrc%2Fmain.rs;0;4
 
 [VTE]

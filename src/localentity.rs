@@ -1,4 +1,5 @@
 use macroquad::prelude::*;
+use crate::consts;
 
 pub struct LocalPlayer{
   pub pos: Vec2,
@@ -26,8 +27,6 @@ impl LocalPlayer{
   {
 	  // vars
 	  let ft = get_frame_time();
-	  let speed = 200.0; // make const l8r todo
-	  let jumpval = 300.0;
 	  let mut dir = 0.0;
 	  
 	  // keys
@@ -40,13 +39,14 @@ impl LocalPlayer{
 	  }
 	  
 	  // gravity
+	  self.vel.y += consts::MAPGRAVITY * ft;
 	  
 	  // jump
 	  if is_key_pressed(KeyCode::Space) {
-			self.vel.y = -jumpval;
+			self.vel.y = -consts::LOCALJUMPFORCE;
 	  }	  
 	  // apply our calcs
-	  self.vel.x = dir * speed;
+	  self.vel.x = dir * consts::LOCALSPEED;
 	  self.pos += self.vel * ft;
   }
 }

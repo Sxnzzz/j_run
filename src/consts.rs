@@ -1,7 +1,7 @@
 // general
-pub const GRAVITY: f32 = 800.0;
-pub const SPEED: f32 = 200.0;
-pub const JUMP_FORCE: f32 = -350.0;
+pub const MAPGRAVITY: f32 = 800.0;
+pub const LOCALSPEED: f32 = 200.0;
+pub const LOCALJUMPFORCE: f32 = 350.0;
 
 // map
 pub const TILESIZE: f32 = 32.0;
